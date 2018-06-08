@@ -1,0 +1,28 @@
+[  1%] [34m[1mCopying 'compile_commands.json' to '/home/administrateur/orca_ws/src/orca'[0m
+[  1%] Built target gtest
+[  2%] Built target gmock_main
+[  4%] Built target orca_priv_tinyxml
+[  6%] Built target gmock
+[ 13%] Built target linsys_suitesparse_ldl
+[ 23%] Built target orca_priv_qpOASES
+[ 23%] Built target orca-compile-commands
+[ 24%] Built target gtest_main
+[ 31%] Built target osqpstatic
+[ 51%] Built target idyntree-core
+[ 62%] Built target idyntree-model
+[ 67%] Built target idyntree-sensors
+[ 70%] Built target idyntree-modelio-urdf
+[ 72%] Built target idyntree-high-level
+[ 88%] Built target orca
+[ 90%] Built target 02-simulating_results
+[ 90%] Built target 01-simple_controller
+[ 90%] Built target 01-plotting_torques
+[ 91%] Built target 01-using_callbacks
+[ 93%] Built target 02-using_lambda_callbacks
+[ 94%] Built target 01-single_robot
+[ 95%] Built target 05-orca_gazebo
+[ 95%] Built target 04-set_robot_state_gravity_compensation
+[ 96%] Built target orca_parser_test
+[ 97%] Built target 02-multi_robot
+[ 98%] Built target 03-set_robot_state
+[100%] Built target 06-trajectory_following

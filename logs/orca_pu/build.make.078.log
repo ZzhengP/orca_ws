@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target 05-orca_gazebo[0m
+[ 30%] Built target gmock_main
+[ 53%] Built target gmock
+[ 69%] Built target gtest
+[ 84%] Built target gtest_main
+[ 92%] [32mBuilding CXX object CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o[0m
+[100%] [32m[1mLinking CXX executable /home/administrateur/orca_ws/devel/.private/orca_pu/lib/orca_pu/05-orca_gazebo[0m
+[100%] Built target 05-orca_gazebo

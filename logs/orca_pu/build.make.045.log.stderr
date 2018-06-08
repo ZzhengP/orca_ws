@@ -1,0 +1,7 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:98:13:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::MatrixXd {aka Eigen::Matrix<double, -1, -1>}[m[K’ is not a template
+      Eigen::MatrixXd<double,1,1> ec_max,ec_min;
+[01;32m[K             ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

@@ -1,0 +1,8 @@
+prefix=/home/administrateur/orca_ws/install
+
+Name: orca
+Description: Description of orca
+Version: 2.0.0
+Cflags: -I/home/administrateur/orca_ws/install/include -I/usr/include/eigen3
+Libs: -L/home/administrateur/orca_ws/install/lib -lorca /usr/lib/x86_64-linux-gnu/libpython2.7.so
+Requires: 

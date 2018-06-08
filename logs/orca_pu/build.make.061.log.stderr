@@ -1,0 +1,32 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:94:14:[m[K [01;31m[Kerror: [m[K‘[01m[Koptim[m[K’ was not declared in this scope
+     std::map<optim::ControlVariable, unsigned int > size_map_;
+[01;32m[K              ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:94:14:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/common/TaskBase.h:45:0[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/common/CartesianServoController.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/common/CartesianAccelerationPID.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/orca.h:50[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:41[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/optim/ControlVariable.h:48:1:[m[K [01;36m[Knote: [m[K  ‘[01m[Korca::optim[m[K’
+ {
+[01;32m[K ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:94:51:[m[K [01;31m[Kerror: [m[Kwrong number of template arguments (1, should be at least 2)
+     std::map<optim::ControlVariable, unsigned int > size_map_;
+[01;32m[K                                                   ^[m[K
+In file included from [01m[K/usr/include/c++/5/map:61:0[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/utils/Utils.h:54[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/orca.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:41[m[K:
+[01m[K/usr/include/c++/5/bits/stl_map.h:96:11:[m[K [01;36m[Knote: [m[Kprovided for ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’
+     class map
+[01;32m[K           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onResize()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:75:71:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[orca::optim::ControlVariable][m[K’ for array subscript
+         int optim_vector_size = size_map_[ControlVariable::JointTorque];
+[01;32m[K                                                                       ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

@@ -1,0 +1,16 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:92:35:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+      const double n_horizon_steps(3);
+[01;32m[K                                   ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:92:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onUpdateConstraintFunction(double, double)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:43:47:[m[K [01;31m[Kerror: [m[Kinvalid use of member function (did you forget the ‘[01m[K()[m[K’ ?)
+     double horizon_temps_ = n_horizon_steps * dt ;
+[01;32m[K                                               ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:50:13:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double>, const Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_multiple_op<double>, const Eigen::Transpose<Eigen::Matrix<double, -1, 1> > >, Eigen::Matrix<double, -1, -1>, 0>, Eigen::Matrix<double, -1, 1>, 0>, const Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, 1> >, Eigen::Matrix<double, -1, -1>, 0>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, -1, 1>, const Eigen::Product<Eigen::Product<Eigen::Matrix<double, -1, -1>, Eigen::Inverse<Eigen::Matrix<double, -1, -1> >, 0>, Eigen::Matrix<double, -1, 1>, 0> >, 0> >[m[K’ to ‘[01m[Kdouble[m[K’ in assignment
+     ec_next = 0.5 * Xd_curr_.transpose() * Lambda_ * Xd_curr_ + delta_X.transpose()* Lambda_*(jdotqdot_ - J_*(Masse_.inverse())*gravity_Torque_);
+[01;32m[K             ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

@@ -1,0 +1,712 @@
+[  0%] [34m[1mCopying 'compile_commands.json' to '/home/administrateur/orca_ws/src/orca'[0m
+[  2%] Built target orca-compile-commands
+[  5%] Built target gmock_main
+[  6%] Built target gtest
+[  6%] Built target orca_priv_tinyxml
+[  6%] Built target gmock
+[ 13%] Built target linsys_suitesparse_ldl
+[ 17%] Built target gtest_main
+[ 24%] Built target orca_priv_qpOASES
+[ 31%] Built target osqpstatic
+[ 51%] Built target idyntree-core
+[ 62%] Built target idyntree-model
+[ 67%] Built target idyntree-sensors
+[ 70%] Built target idyntree-modelio-urdf
+[ 72%] Built target idyntree-high-level
+[ 88%] Built target orca
+[ 89%] Built target 02-simulating_results
+[ 90%] Built target 01-using_callbacks
+[ 90%] Built target 01-plotting_torques
+[ 91%] Built target 01-single_robot
+[ 91%] Built target 04-set_robot_state_gravity_compensation
+[ 93%] Built target 03-set_robot_state
+[ 94%] Built target 02-multi_robot
+[35m[1mScanning dependencies of target 05-orca_gazebo[0m
+[ 95%] Built target 01-simple_controller
+[ 96%] Built target 02-using_lambda_callbacks
+[ 97%] Built target orca_parser_test
+[ 98%] Built target 06-trajectory_following
+[100%] [32mBuilding CXX object examples/gazebo/CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o[0m
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kdouble orca::gazebo::GazeboServer::getDt()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:178:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::PhysicsEnginePtr gazebo::physics::World::GetPhysicsEngine() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             return world_->GetPhysicsEngine()->GetMaxStepSize();
+[01;32m[K                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:147:32:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: PhysicsEnginePtr GetPhysicsEngine() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kint orca::gazebo::GazeboServer::getModelCount()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:231:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kunsigned int gazebo::physics::World::GetModelCount() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             return world_->GetModelCount();
+[01;32m[K                                          ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:204:28:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: unsigned int GetModelCount() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                            ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> > orca::gazebo::GazeboServer::getModelNames()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:244:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::Model_V gazebo::physics::World::GetModels() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             for(auto model : world_->GetModels())
+[01;32m[K                                                ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:229:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Model_V GetModels() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kbool orca::gazebo::GazeboServer::modelExists(const string&)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:257:55:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::ModelPtr gazebo::physics::World::GetModel(const string&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto model = world_->GetModel( model_name );
+[01;32m[K                                                       ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:331:24:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: ModelPtr GetModel(const std::string &_name)
+[01;32m[K                        ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kconst Vector3d& orca::gazebo::GazeboServer::getGravity()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:268:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::PhysicsEnginePtr gazebo::physics::World::GetPhysicsEngine() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:147:32:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: PhysicsEnginePtr GetPhysicsEngine() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:268:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3 gazebo::physics::PhysicsEngine::GetGravity() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:36:0[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/PhysicsEngine.hh:143:37:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual math::Vector3 GetGravity() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                     ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:268:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:268:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Vector3::Vector3(const gazebo::math::Vector3&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:78:15:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Vector3(const Vector3 &_v) GAZEBO_DEPRECATED(8.0);
+[01;32m[K               ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:268:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:270:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::math::Vector3::operator[](unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+         gravity_vector_[0] = g[0];
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:319:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double operator[](unsigned int index) const
+[01;32m[K                      ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:271:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::math::Vector3::operator[](unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+         gravity_vector_[1] = g[1];
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:319:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double operator[](unsigned int index) const
+[01;32m[K                      ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:272:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::math::Vector3::operator[](unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+         gravity_vector_[2] = g[2];
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:319:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double operator[](unsigned int index) const
+[01;32m[K                      ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kgazebo::physics::ModelPtr orca::gazebo::GazeboServer::getModelByName(const string&)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:308:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::ModelPtr gazebo::physics::World::GetModel(const string&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             return world_->GetModel(model_name);
+[01;32m[K                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:331:24:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: ModelPtr GetModel(const std::string &_name)
+[01;32m[K                        ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kvoid orca::gazebo::GazeboServer::worldUpdateBegin()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:489:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::Model_V gazebo::physics::World::GetModels() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             for(auto model : world_->GetModels())
+[01;32m[K                                                ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:229:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Model_V GetModels() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kdouble orca::gazebo::GazeboServer::getIterations()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:531:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32_t gazebo::physics::World::GetIterations() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             return world_->GetIterations();
+[01;32m[K                                          ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:539:24:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: uint32_t GetIterations() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                        ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kdouble orca::gazebo::GazeboServer::getSimTime()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:541:39:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::common::Time gazebo::physics::World::GetSimTime() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             return world_->GetSimTime().Double();
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:263:28:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: common::Time GetSimTime() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                            ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:[m[K In member function ‘[01m[Kvoid orca::gazebo::GazeboServer::countExistingSensors()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:552:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::Model_V gazebo::physics::World::GetModels() const[m[K’ is deprecated [-Wdeprecated-declarations]
+         for(auto model : world_->GetModels())
+[01;32m[K                                            ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:229:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Model_V GetModels() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:[m[K In member function ‘[01m[Kbool orca::gazebo::GazeboModel::load(const string&)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:117:55:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::ModelPtr gazebo::physics::World::GetModel(const string&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto model = world_->GetModel( model_name );
+[01;32m[K                                                       ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:331:24:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: ModelPtr GetModel(const std::string &_name)
+[01;32m[K                        ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:[m[K In member function ‘[01m[Kbool orca::gazebo::GazeboModel::load(gazebo::physics::ModelPtr)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:155:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetLowerLimit(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                     && joint->GetLowerLimit(0u) != joint->GetUpperLimit(0u)
+[01;32m[K                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:589:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetLowerLimit(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:155:75:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetUpperLimit(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                     && joint->GetLowerLimit(0u) != joint->GetUpperLimit(0u)
+[01;32m[K                                                                           ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:603:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetUpperLimit(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:156:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetLowerLimit(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                     && joint->GetLowerLimit(0u).Radian() != 0
+[01;32m[K                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:589:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetLowerLimit(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:157:59:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetLowerLimit(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                     && !std::isnan(joint->GetLowerLimit(0u).Radian())
+[01;32m[K                                                           ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:589:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetLowerLimit(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:158:59:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetUpperLimit(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                     && !std::isnan(joint->GetUpperLimit(0u).Radian())
+[01;32m[K                                                           ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:603:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetUpperLimit(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:174:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetLowerLimit(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                 << " lower limit " << joint->GetLowerLimit(0u)
+[01;32m[K                                                              ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:589:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetLowerLimit(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:175:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetUpperLimit(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                 << " upper limit " << joint->GetUpperLimit(0u)
+[01;32m[K                                                              ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:603:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetUpperLimit(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:[m[K In member function ‘[01m[Kdouble orca::gazebo::GazeboModel::getIterations()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:305:42:[m[K [01;35m[Kwarning: [m[K‘[01m[Kuint32_t gazebo::physics::World::GetIterations() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             return world_->GetIterations();
+[01;32m[K                                          ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:539:24:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: uint32_t GetIterations() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                        ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:[m[K In member function ‘[01m[Kvoid orca::gazebo::GazeboModel::worldUpdateBegin()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:315:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::PhysicsEnginePtr gazebo::physics::World::GetPhysicsEngine() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:147:32:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: PhysicsEnginePtr GetPhysicsEngine() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:315:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3 gazebo::physics::PhysicsEngine::GetGravity() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:36:0[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/PhysicsEngine.hh:143:37:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual math::Vector3 GetGravity() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                     ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:315:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:315:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Vector3::Vector3(const gazebo::math::Vector3&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:78:15:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Vector3(const Vector3 &_v) GAZEBO_DEPRECATED(8.0);
+[01;32m[K               ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:315:61:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto g = world_->GetPhysicsEngine()->GetGravity();
+[01;32m[K                                                             ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:317:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::math::Vector3::operator[](unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+         gravity_vector_[0] = g[0];
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:319:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double operator[](unsigned int index) const
+[01;32m[K                      ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:318:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::math::Vector3::operator[](unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+         gravity_vector_[1] = g[1];
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:319:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double operator[](unsigned int index) const
+[01;32m[K                      ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:319:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::math::Vector3::operator[](unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+         gravity_vector_[2] = g[2];
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:319:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double operator[](unsigned int index) const
+[01;32m[K                      ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:[m[K In member function ‘[01m[Kvoid orca::gazebo::GazeboModel::worldUpdateEnd()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:342:64:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Angle gazebo::physics::Joint::GetAngle(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                 current_joint_positions_[i] = joint->GetAngle(0).Radian();
+[01;32m[K                                                                ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:417:27:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Angle GetAngle(unsigned int _index) const
+[01;32m[K                           ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:351:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Vector3 gazebo::physics::Joint::GetLocalAxis(unsigned int) const[m[K’ is deprecated [-Wdeprecated-declarations]
+                 auto a = joint->GetLocalAxis(0u);
+[01;32m[K                                                ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/BallJoint.hh:25:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:6[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Joint.hh:247:29:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Vector3 GetLocalAxis(unsigned int _index) const
+[01;32m[K                             ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:351:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+                 auto a = joint->GetLocalAxis(0u);
+[01;32m[K                                                ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:351:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Vector3::Vector3(const gazebo::math::Vector3&)[m[K’ is deprecated [-Wdeprecated-declarations]
+                 auto a = joint->GetLocalAxis(0u);
+[01;32m[K                                                ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:78:15:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Vector3(const Vector3 &_v) GAZEBO_DEPRECATED(8.0);
+[01;32m[K               ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:351:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+                 auto a = joint->GetLocalAxis(0u);
+[01;32m[K                                                ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:353:69:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Vector3::Vector3(const Vector3d&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             current_joint_measured_torques_[i] = a.Dot(w.body1Torque);
+[01;32m[K                                                                     ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:73:15:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Vector3(const ignition::math::Vector3d &_v)
+[01;32m[K               ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:353:69:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             current_joint_measured_torques_[i] = a.Dot(w.body1Torque);
+[01;32m[K                                                                     ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:353:69:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble gazebo::math::Vector3::Dot(const gazebo::math::Vector3&) const[m[K’ is deprecated [-Wdeprecated-declarations]
+             current_joint_measured_torques_[i] = a.Dot(w.body1Torque);
+[01;32m[K                                                                     ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:138:22:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: double Dot(const Vector3 &_pt) const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                      ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:362:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Pose gazebo::physics::Entity::GetRelativePose() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto pose = model_->GetRelativePose();
+[01;32m[K                                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Model.hh:30:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/Actor.hh:24[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:2[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Entity.hh:146:26:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: math::Pose GetRelativePose() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                          ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:362:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Pose::~Pose()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto pose = model_->GetRelativePose();
+[01;32m[K                                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/math/gzmath.hh:11:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:20[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Pose.hh:76:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Pose() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:362:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Pose::Pose(const gazebo::math::Pose&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto pose = model_->GetRelativePose();
+[01;32m[K                                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/math/gzmath.hh:11:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:20[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Pose.hh:69:15:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Pose(const Pose &_pose) GAZEBO_DEPRECATED(8.0);
+[01;32m[K               ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:362:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Pose::~Pose()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto pose = model_->GetRelativePose();
+[01;32m[K                                                 ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/math/gzmath.hh:11:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:20[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Pose.hh:76:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Pose() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:366:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3 gazebo::physics::Model::GetRelativeLinearVel() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_lin = model_->GetRelativeLinearVel();
+[01;32m[K                                                              ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Actor.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:2[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Model.hh:159:37:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual math::Vector3 GetRelativeLinearVel() const
+[01;32m[K                                     ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:366:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_lin = model_->GetRelativeLinearVel();
+[01;32m[K                                                              ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:366:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Vector3::Vector3(const gazebo::math::Vector3&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_lin = model_->GetRelativeLinearVel();
+[01;32m[K                                                              ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:78:15:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Vector3(const Vector3 &_v) GAZEBO_DEPRECATED(8.0);
+[01;32m[K               ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:366:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_lin = model_->GetRelativeLinearVel();
+[01;32m[K                                                              ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:367:63:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3 gazebo::physics::Model::GetRelativeAngularVel() const[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_ang = model_->GetRelativeAngularVel();
+[01;32m[K                                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Actor.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:2[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/Model.hh:181:37:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual math::Vector3 GetRelativeAngularVel() const
+[01;32m[K                                     ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:367:63:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_ang = model_->GetRelativeAngularVel();
+[01;32m[K                                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:367:63:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::math::Vector3::Vector3(const gazebo::math::Vector3&)[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_ang = model_->GetRelativeAngularVel();
+[01;32m[K                                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:78:15:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: Vector3(const Vector3 &_v) GAZEBO_DEPRECATED(8.0);
+[01;32m[K               ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:367:63:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual gazebo::math::Vector3::~Vector3()[m[K’ is deprecated [-Wdeprecated-declarations]
+             auto base_vel_ang = model_->GetRelativeAngularVel();
+[01;32m[K                                                               ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/common/Color.hh:24:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/common/common.hh:14[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo_core.hh:19[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/gazebo.hh:20[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:42[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/math/Vector3.hh:81:23:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: virtual ~Vector3() GAZEBO_DEPRECATED(8.0);
+[01;32m[K                       ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:380:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::common::Time gazebo::physics::World::GetSimTime() const[m[K’ is deprecated [-Wdeprecated-declarations]
+                 double sim_time = world_->GetSimTime().Double();
+[01;32m[K                                                      ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:263:28:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: common::Time GetSimTime() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                            ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:43:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboModel.h:385:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::PhysicsEnginePtr gazebo::physics::World::GetPhysicsEngine() const[m[K’ is deprecated [-Wdeprecated-declarations]
+                 double dt = world_->GetPhysicsEngine()->GetMaxStepSize();
+[01;32m[K                                                      ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/examples/gazebo/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:147:32:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: PhysicsEnginePtr GetPhysicsEngine() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                ^[m[K
+[100%] [32m[1mLinking CXX executable /home/administrateur/orca_ws/devel/.private/orca/lib/orca/05-orca_gazebo[0m
+[100%] Built target 05-orca_gazebo

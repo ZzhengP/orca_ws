@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../lib/libidyntree-modelio-urdf.a  CMakeFiles/idyntree-modelio-urdf.dir/src/URDFModelImport.cpp.o CMakeFiles/idyntree-modelio-urdf.dir/src/URDFDofsImport.cpp.o CMakeFiles/idyntree-modelio-urdf.dir/src/URDFGenericSensorsImport.cpp.o CMakeFiles/idyntree-modelio-urdf.dir/src/URDFSolidShapesImport.cpp.o CMakeFiles/idyntree-modelio-urdf.dir/src/ModelLoader.cpp.o
+/usr/bin/ranlib ../../../../../lib/libidyntree-modelio-urdf.a

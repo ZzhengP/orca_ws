@@ -1,0 +1,19 @@
+[35m[1mScanning dependencies of target gmock[0m
+[35m[1mScanning dependencies of target gtest[0m
+[35m[1mScanning dependencies of target gmock_main[0m
+[ 18%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[ 18%] [32mBuilding CXX object gmock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 27%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/usr/src/gtest/src/gtest-all.cc.o[0m
+[ 36%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/usr/src/gtest/src/gtest-all.cc.o[0m
+[ 45%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o[0m
+[ 54%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[ 63%] [32m[1mLinking CXX shared library libgtest.so[0m
+[ 72%] [32m[1mLinking CXX shared library libgmock_main.so[0m
+[ 72%] Built target gtest
+[35m[1mScanning dependencies of target gtest_main[0m
+[ 81%] [32mBuilding CXX object gmock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 81%] Built target gmock_main
+[ 90%] [32m[1mLinking CXX shared library libgtest_main.so[0m
+[ 90%] Built target gtest_main
+[100%] [32m[1mLinking CXX shared library libgmock.so[0m
+[100%] Built target gmock

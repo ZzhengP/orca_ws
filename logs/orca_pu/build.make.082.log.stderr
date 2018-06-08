@@ -1,0 +1,6 @@
+[01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:41:23:[m[K [01;31m[Kfatal error: [m[Korca/orca.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make[1]: *** Attente des tâches non terminées....
+make: *** [all] Erreur 2

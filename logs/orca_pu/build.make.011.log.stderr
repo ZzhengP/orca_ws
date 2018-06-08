@@ -1,0 +1,36 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:49:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_gazebo_pu_reg.hpp:[m[K In constructor ‘[01m[KgravityRegular::gravityRegular(const string&)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_gazebo_pu_reg.hpp:14:47:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[Korca::task::JointTorqueTask[m[K’ is not a direct base of ‘[01m[KgravityRegular[m[K’
+       gravityRegular(const std::string& name):JointTorqueTask(name)
+[01;32m[K                                               ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_gazebo_pu_reg.hpp:14:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Korca::task::RegularisationTask<(orca::optim::ControlVariable)6>::RegularisationTask()[m[K’
+       gravityRegular(const std::string& name):JointTorqueTask(name)
+[01;32m[K                                                                   ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/optim/Controller.h:51:0[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/orca.h:63[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:41[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/task/RegularisationTask.h:55:9:[m[K [01;36m[Knote: [m[Kcandidate: orca::task::RegularisationTask<C>::RegularisationTask(const string&) [with orca::optim::ControlVariable C = (orca::optim::ControlVariable)6; std::__cxx11::string = std::__cxx11::basic_string<char>]
+         RegularisationTask(const std::string& name)
+[01;32m[K         ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/task/RegularisationTask.h:55:9:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/task/RegularisationTask.h:50:46:[m[K [01;36m[Knote: [m[Kcandidate: orca::task::RegularisationTask<(orca::optim::ControlVariable)6>::RegularisationTask(const orca::task::RegularisationTask<(orca::optim::ControlVariable)6>&)
+     template<optim::ControlVariable C> class RegularisationTask : public GenericTask
+[01;32m[K                                              ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/task/RegularisationTask.h:50:46:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/task/RegularisationTask.h:50:46:[m[K [01;36m[Knote: [m[Kcandidate: orca::task::RegularisationTask<(orca::optim::ControlVariable)6>::RegularisationTask(orca::task::RegularisationTask<(orca::optim::ControlVariable)6>&&)
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/task/RegularisationTask.h:50:46:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onUpdateConstraintFunction(double, double)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:43:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::PhysicsEnginePtr gazebo::physics::World::GetPhysicsEngine() const[m[K’ is deprecated [-Wdeprecated-declarations]
+     double sim_step_dt = world->GetPhysicsEngine()->GetRealTimeUpdateRate()*1e-6;
+[01;32m[K                                                  ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:147:32:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: PhysicsEnginePtr GetPhysicsEngine() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

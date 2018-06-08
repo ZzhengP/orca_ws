@@ -1,0 +1,6 @@
+devel_space: /home/administrateur/orca_ws/devel
+install: false
+install_space: /home/administrateur/orca_ws/install
+profile: default
+source_space: /home/administrateur/orca_ws/src
+workspace: /home/administrateur/orca_ws

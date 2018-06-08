@@ -1,0 +1,7 @@
+[31m[1mCMake Error[0m at /home/administrateur/orca_ws/src/orca_pu/CMakeLists.txt:19 (add_executable):
+  Target "05-orca_gazebo" links to target "orca::orca" but the target was not
+  found.  Perhaps a find_package() call is missing for an IMPORTED target, or
+  an ALIAS target is missing?
+
+
+make: *** [cmake_check_build_system] Erreur 1

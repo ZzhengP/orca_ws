@@ -1,0 +1,36 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:49:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_gazebo_pu_reg.hpp:[m[K In member function ‘[01m[Kvirtual void gravityRegular::onUpdateAffineFunction(double, double)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_gazebo_pu_reg.hpp:28:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMasse_inv[m[K’ was not declared in this scope
+    euclidianNorm().A() = Masse_inv;
+[01;32m[K                          ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_gazebo_pu_reg.hpp:30:41:[m[K [01;31m[Kerror: [m[K‘[01m[KGravity_torque[m[K’ was not declared in this scope
+    euclidianNorm().b() = -0.5*Masse_inv*Gravity_torque ;
+[01;32m[K                                         ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onUpdateConstraintFunction(double, double)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:43:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::PhysicsEnginePtr gazebo::physics::World::GetPhysicsEngine() const[m[K’ is deprecated [-Wdeprecated-declarations]
+     double sim_step_dt = world->GetPhysicsEngine()->GetRealTimeUpdateRate()*1e-6;
+[01;32m[K                                                  ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:147:32:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: PhysicsEnginePtr GetPhysicsEngine() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:100:89:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Korca::optim::Controller::addTask(const char [23], const int&)[m[K’
+      auto gravity_reg = controller.addTask<gravityRegular>("gravity_regularisation",ndof);
+[01;32m[K                                                                                         ^[m[K
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/orca.h:63:0[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:41[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/optim/Controller.h:82:28:[m[K [01;36m[Knote: [m[Kcandidate: template<class T> std::shared_ptr<_Tp1> orca::optim::Controller::addTask(const string&)
+         std::shared_ptr<T> addTask(const std::string& name)
+[01;32m[K                            ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/optim/Controller.h:82:28:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:100:89:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+      auto gravity_reg = controller.addTask<gravityRegular>("gravity_regularisation",ndof);
+[01;32m[K                                                                                         ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

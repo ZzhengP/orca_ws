@@ -1,0 +1,50 @@
+set(iDynTree_VERSION 0.8.1)
+
+
+####### Expanded from @PACKAGE_INIT@ by configure_package_config_file() #######
+####### Any changes to this file will be overwritten by the next CMake run ####
+####### The input file was iDynTreeConfig.cmake.in                            ########
+
+get_filename_component(PACKAGE_PREFIX_DIR "${CMAKE_CURRENT_LIST_DIR}/" ABSOLUTE)
+
+macro(set_and_check _var _file)
+  set(${_var} "${_file}")
+  if(NOT EXISTS "${_file}")
+    message(FATAL_ERROR "File or directory ${_file} referenced by variable ${_var} does not exist !")
+  endif()
+endmacro()
+
+####################################################################################
+
+if(NOT TARGET iDynTree::idyntree-core)
+  include("${CMAKE_CURRENT_LIST_DIR}/iDynTreeTargets.cmake")
+endif()
+
+if(TARGET iDynTree::idyntree-kdl)
+    find_package(orocos_kdl QUIET)
+    #support also for the old version of kdl cmake package
+    if(NOT orocos_kdl_FOUND)
+        find_package(Orocos-KDL QUIET)
+        if(NOT Orocos-KDL_FOUND)
+            message(WARNING "KDL not found: neither orocos_kdl or Orocos-KDL cmake packages are available")
+        else()
+            set(orocos_kdl_INCLUDE_DIRS ${Orocos-KDL_INCLUDE_DIRS})
+            set(orocos_kdl_LIBRARY_DIRS ${Orocos-KDL_LIBRARY_DIRS})
+            set(orocos_kdl_LIBRARIES ${Orocos-KDL_LIBRARIES})
+            set(orocos_kdl_FOUND true)
+        endif()
+    endif()
+    find_package(TinyXML QUIET)
+endif()
+
+if(TARGET iDynTree::idyntree-yarp)
+    find_package(YARP QUIET)
+endif()
+
+if(TARGET iDynTree::idyntree-icub)
+    find_package(ICUB QUIET)
+endif()
+
+# Provide an iDynTree_LIBRARIES variable containing all the
+# targets exported by iDynTree
+set(iDynTree_LIBRARIES "iDynTree::idyntree-core;iDynTree::idyntree-model;iDynTree::idyntree-sensors;iDynTree::idyntree-modelio-urdf;iDynTree::idyntree-estimation;iDynTree::idyntree-high-level;iDynTree::idyntree-high-level-kdl;iDynTree::idyntree-regressors;iDynTree::idyntree-visualization")

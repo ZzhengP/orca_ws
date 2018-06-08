@@ -1,0 +1,1 @@
+/usr/bin/cc   -O3 -O3 -DNDEBUG   CMakeFiles/osqp_demo.dir/examples/osqp_demo.c.o  -o out/osqp_demo -rdynamic out/libosqpstatic.a  -lm -lrt -ldl 

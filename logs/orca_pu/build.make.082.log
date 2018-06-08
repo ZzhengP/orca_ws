@@ -1,0 +1,17 @@
+[ 23%] Built target gmock
+[ 38%] Built target gtest
+[ 46%] [32mBuilding CXX object CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o[0m
+[ 76%] Built target gmock_main
+[01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:41:23:[m[K [01;31m[Kfatal error: [m[Korca/orca.h: Aucun fichier ou dossier de ce type
+compilation terminated.
+[35m[1mScanning dependencies of target gtest_main[0m
+CMakeFiles/05-orca_gazebo.dir/build.make:62 : la recette pour la cible « CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o » a échouée
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+CMakeFiles/Makefile2:259 : la recette pour la cible « CMakeFiles/05-orca_gazebo.dir/all » a échouée
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make[1]: *** Attente des tâches non terminées....
+[ 84%] [32mBuilding CXX object gmock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 92%] [32m[1mLinking CXX shared library libgtest_main.so[0m
+[ 92%] Built target gtest_main
+Makefile:138 : la recette pour la cible « all » a échouée
+make: *** [all] Erreur 2

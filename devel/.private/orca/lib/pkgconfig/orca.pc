@@ -1,0 +1,8 @@
+prefix=/home/administrateur/orca_ws/devel/.private/orca
+
+Name: orca
+Description: Description of orca
+Version: 2.0.0
+Cflags: -I/home/administrateur/orca_ws/src/orca/include -I/usr/include/eigen3 -I/home/administrateur/orca_ws/src/orca/external/matplotlibcpp/include -I/home/administrateur/orca_ws/src/orca/external/plog-1.1.4/include
+Libs: -L/home/administrateur/orca_ws/devel/.private/orca/lib -lorca /usr/lib/x86_64-linux-gnu/libpython2.7.so
+Requires: 

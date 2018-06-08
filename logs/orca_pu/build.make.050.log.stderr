@@ -1,0 +1,11 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onUpdateConstraintFunction(double, double)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:53:20:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kint[m[K’ and ‘[01m[KEigen::Matrix<double, 1, 1, 0, 1, 1>[m[K’)
+     ec_min << -100 - ec_next ;
+[01;32m[K                    ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:55:22:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kdouble[m[K’ and ‘[01m[KEigen::Matrix<double, 1, 1, 0, 1, 1>[m[K’)
+     ec_max << ec_lim - ec_next ;
+[01;32m[K                      ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

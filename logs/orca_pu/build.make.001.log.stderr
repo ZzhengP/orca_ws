@@ -1,0 +1,17 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onUpdateConstraintFunction(double, double)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:43:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgazebo::physics::PhysicsEnginePtr gazebo::physics::World::GetPhysicsEngine() const[m[K’ is deprecated [-Wdeprecated-declarations]
+     double sim_step_dt = world->GetPhysicsEngine()->GetRealTimeUpdateRate()*1e-6;
+[01;32m[K                                                  ^[m[K
+In file included from [01m[K/usr/include/gazebo-8/gazebo/physics/Population.hh:28:0[m[K,
+                 from [01m[K/usr/include/gazebo-8/gazebo/physics/physics.hh:41[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/gazebo/GazeboServer.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:42[m[K:
+[01m[K/usr/include/gazebo-8/gazebo/physics/World.hh:147:32:[m[K [01;36m[Knote: [m[Kdeclared here
+       public: PhysicsEnginePtr GetPhysicsEngine() const GAZEBO_DEPRECATED(8.0);
+[01;32m[K                                ^[m[K
+/usr/bin/ld : ne peut trouver -lorca
+collect2: error: ld returned 1 exit status
+make[2]: *** [05-orca_gazebo] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

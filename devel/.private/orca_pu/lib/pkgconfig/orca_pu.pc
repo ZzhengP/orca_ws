@@ -1,0 +1,8 @@
+prefix=/home/administrateur/orca_ws/devel/.private/orca_pu
+
+Name: orca_pu
+Description: Description of orca_pu
+Version: 2.0.0
+Cflags: 
+Libs: -L/home/administrateur/orca_ws/devel/.private/orca_pu/lib 
+Requires: 

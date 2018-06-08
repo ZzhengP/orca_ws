@@ -1,0 +1,8 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onResize()[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:93:21:[m[K [01;31m[Kerror: [m[K‘[01m[Khorizon_temps_[m[K’ was not declared in this scope
+  delta_X = Xd_curr_*horizon_temps_ +  0.5*AccelerationDes_*horizon_temps_*horizon_temps_ ;
+[01;32m[K                     ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

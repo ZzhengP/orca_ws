@@ -1,0 +1,25 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:50:0[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:98:29:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+      Eigen::VectorXd ec_max(1),ec_min(1);
+[01;32m[K                             ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:98:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:98:39:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+      Eigen::VectorXd ec_max(1),ec_min(1);
+[01;32m[K                                       ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:98:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:[m[K In member function ‘[01m[Kvirtual void EnergyConstraint::onUpdateConstraintFunction(double, double)[m[K’:
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:62:22:[m[K [01;31m[Kerror: [m[Kinvalid use of member function (did you forget the ‘[01m[K()[m[K’ ?)
+     ec_min << -100 - ec_next ;
+[01;32m[K                      ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:64:24:[m[K [01;31m[Kerror: [m[Kinvalid use of member function (did you forget the ‘[01m[K()[m[K’ ?)
+     ec_max << ec_lim - ec_next ;
+[01;32m[K                        ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:66:39:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function
+     constraintFunction().lowerBound() = ec_min;
+[01;32m[K                                       ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/orca_pu_gazebo_ctrs.hpp:67:39:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function
+     constraintFunction().upperBound() = ec_max;
+[01;32m[K                                       ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2

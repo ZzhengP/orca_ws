@@ -1,0 +1,14 @@
+In file included from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/common/CartesianServoController.h:44:0[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/common/CartesianAccelerationPID.h:44[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca/include/orca/orca.h:50[m[K,
+                 from [01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:41[m[K:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/common/TaskBase.h:[m[K In lambda function:
+[01m[K/home/administrateur/orca_ws/src/orca/include/orca/common/TaskBase.h:122:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual void orca::common::TaskBase::resize()[m[K’ is protected
+         virtual void resize();
+[01;32m[K                      ^[m[K
+[01m[K/home/administrateur/orca_ws/src/orca_pu/05-orca_gazebo.cc:144:29:[m[K [01;31m[Kerror: [m[Kwithin this context
+         energy_ctrs->resize();  
+[01;32m[K                             ^[m[K
+make[2]: *** [CMakeFiles/05-orca_gazebo.dir/05-orca_gazebo.cc.o] Erreur 1
+make[1]: *** [CMakeFiles/05-orca_gazebo.dir/all] Erreur 2
+make: *** [all] Erreur 2
